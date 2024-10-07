@@ -1,0 +1,33 @@
+.filters {
+	background-color: var(--color-bg-secondary-darken);
+	padding: 30px;
+	border-radius: 15px;
+}
+
+.items {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 30px;
+}
+
+.genres {
+	left: 0;
+	transform: translateX(0);
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	color: var(--color-text-secondary);
+	transition: color .2s linear;
+
+	&:hover {
+		color: var(--color-text);
+	}
+}
+
+.icon {
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+}

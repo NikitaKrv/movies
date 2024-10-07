@@ -1,0 +1,43 @@
+.select {
+	cursor: pointer;
+	position: relative;
+	width: 20%;
+	flex: 1 0 20%;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--color-bg-secondary);
+	height: 100%;
+	padding: 10px 30px;
+	border-radius: 10px;
+}
+
+.left {
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+}
+
+.selected {
+	color: var(--color-text-secondary);
+	font-size: 16px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-top: 10px;
+}
+
+.icon {
+	transform: rotate(0deg);
+	width: 25px;
+	height: 25px;
+	transition: transform .2s linear;
+
+	&.open {
+		transform: rotate(180deg);
+	}
+}
+

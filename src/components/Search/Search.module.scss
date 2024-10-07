@@ -1,0 +1,52 @@
+.search {
+	position: relative;
+
+	input {
+		height: 45px;
+		width: 400px;
+		padding-left: 60px;
+		padding-right: 15px;
+		border: 2px solid var(--color-primary);
+		background-color: transparent;
+		border-radius: 20px;
+		font-size: 16px;
+		transition: border-color .2s linear, background-color .2s linear;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+		&::placeholder {
+			font-size: 16px;
+		}
+
+		&:focus {
+			border-color: var(--color-primary-hover);
+			background-color: var(--color-bg-secondary-darken);
+
+			&::placeholder {
+				color: transparent;
+			}
+		}
+	}
+
+	svg {
+		position: absolute;
+		height: 25px;
+		width: 25px;
+		left: 20px;
+		top: 50%;
+		transform: translateY(-50%);
+		color: var(--color-primary);
+		transition: color .2s linear;
+	}
+
+	&:hover {
+		input {
+			border-color: var(--color-primary-hover);
+			background-color: var(--color-bg-secondary-darken);
+		}
+
+		svg {
+			color: var(--color-primary-hover);
+		}
+	}
+}

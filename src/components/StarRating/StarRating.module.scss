@@ -1,0 +1,19 @@
+.rating {
+	display: flex;
+}
+
+.starRating {
+	display: flex;
+	justify-content: flex-start;
+	gap: 4px;
+}
+
+.cStar {
+	width: 20px;
+	height: 20px;
+	fill: var(--color-bg-secondary-darken);
+
+	&.active {
+		fill: var(--color-primary);
+	}
+}

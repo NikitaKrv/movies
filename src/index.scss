@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--font: Manrope, sans-serif;
+	--color-text: #fff;
+	--color-text-secondary: #999;
+	--color-bg: #141414;
+	--color-bg-secondary: #1a1a1a;
+	--color-bg-secondary-darken: #0f0f0f;
+	--color-border: #262626;
+	--color-primary: #ef4234;
+	--color-primary-hover: #c52a1b;
+}
+
+body {
+	color: #fff;
+	margin: 0;
+	background-color: var(--color-bg);
+	font-family: var(--font);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1em;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+button {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	color: inherit;
+}
+
+input {
+	border: none;
+	outline: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}

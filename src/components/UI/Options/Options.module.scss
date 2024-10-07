@@ -1,0 +1,34 @@
+.options {
+	position: absolute;
+	z-index: 999;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(26px, 1fr));
+	grid-auto-flow: column;
+	align-items: start;
+	padding: 10px 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	min-width: 100%;
+	max-width: 660px;
+	max-height: 400px;
+	margin-top: 10px;
+	background-color: var(--color-bg-secondary);
+	border-radius: 10px;
+}
+
+.option {
+	color: var(--color-text-secondary);
+	padding: 4px 0;
+	transition: color .2s linear;
+	font-size: 15px;
+	position: relative;
+
+	&.selected {
+		color: var(--color-text);
+	}
+
+	&:hover {
+		color: var(--color-text);
+	}
+}
