@@ -1,0 +1,61 @@
+:global {
+
+	.slick-list {
+		height: 400px;
+		//padding: 20px;
+	}
+
+	.slick-slide {
+		height: 100%;
+		width: 100%;
+		padding: 10px;
+
+		img {
+			//width: 300px;
+			width: 200px;
+			height: 300px;
+		}
+
+		& > div {
+			padding: 20px;
+		}
+	}
+
+	.slick-dots {
+		bottom: -10px;
+
+		li {
+			width: 8px;
+			height: 8px;
+			margin: 0 8px;
+
+			&.slick-active {
+				div {
+					background-color: rgb(42, 108, 234);
+				}
+			}
+		}
+	}
+}
+
+.staffs {
+	margin-top: 100px;
+}
+
+.title {
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 50px;
+}
+
+.dots {
+	display: flex;
+	gap: 30px;
+}
+
+.dotsItem {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: rgb(194, 200, 205);
+}

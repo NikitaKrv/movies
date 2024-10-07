@@ -8,9 +8,6 @@ import SeriesPage from './pages/SeriesPage/SeriesPage.tsx'
 import ShowPage from './pages/ShowPage/ShowPage.tsx'
 import InfoPage from './pages/InfoPage/InfoPage.tsx'
 import 'normalize.css'
-import 'swiper/css'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
 import './index.scss'
 
 const router = createBrowserRouter([
